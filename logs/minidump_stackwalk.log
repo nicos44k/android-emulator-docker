@@ -1,0 +1,699 @@
+/root/.cargo/bin/minidump-stackwalk 72085df4-9c39-4273-bab3-c8350bfbd729.dmp
+
+Operating system: Linux
+                  6.5.0 -28-generic #29~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Apr  4 14:39:20 UTC 2 x86_64
+CPU: amd64
+     family 25 model 33 stepping 2
+     32 CPUs
+
+Crash reason:  SIGSEGV / SEGV_MAPERR
+Crash address: 0x0000000000000000
+Process uptime: 0 seconds
+
+Thread 0 qemu-system-x86 (crashed)
+ 0  libc.so.6 + 0x19d7fd
+     rax = 0x0000000000000000    rdx = 0x0000000000000000
+     rcx = 0x00006396bcd96c40    rbx = 0x0000000000000000
+     rsi = 0x00007ffe8c6d5e10    rdi = 0x0000000000000000
+     rbp = 0x00006396bd5d0d80    rsp = 0x00007ffe8c6d6228
+      r8 = 0x0000000000000000     r9 = 0xffffffffffffffff
+     r10 = 0x0000000000000001    r11 = 0x0000000000000202
+     r12 = 0xffffffffffffffff    r13 = 0x00006396bd590648
+     r14 = 0x0000000000000031    r15 = 0x00006396bd5d0d80
+     rip = 0x000079468637b7fd
+    Found by: given as instruction pointer in context
+ 1  libandroid-emu-metrics.so + 0x203d40
+     rsp = 0x00007ffe8c6d6230    rip = 0x0000794686e3dd41
+    Found by: stack scanning
+ 2  libtcmalloc_minimal.so.4 + 0x24c477
+     rsp = 0x00007ffe8c6d6290    rip = 0x000079468904c478
+    Found by: stack scanning
+ 3  qemu-system-x86_64-headless + 0x1489d67
+     rsp = 0x00007ffe8c6d6310    rip = 0x00006396bc784d68
+    Found by: stack scanning
+ 4  libc++.so.1 + 0x12f02f
+     rsp = 0x00007ffe8c6d6330    rip = 0x0000794687136030
+    Found by: stack scanning
+ 5  libc++.so.1 + 0x13ce1f
+     rsp = 0x00007ffe8c6d6338    rip = 0x0000794687143e20
+    Found by: stack scanning
+ 6  libc++.so.1 + 0x12efcf
+     rsp = 0x00007ffe8c6d6398    rip = 0x0000794687135fd0
+    Found by: stack scanning
+ 7  libc++.so.1 + 0x13ce1f
+     rsp = 0x00007ffe8c6d63c8    rip = 0x0000794687143e20
+    Found by: stack scanning
+ 8  libc++.so.1 + 0x13ce1f
+     rsp = 0x00007ffe8c6d6448    rip = 0x0000794687143e20
+    Found by: stack scanning
+ 9  libc++.so.1 + 0x13cbef
+     rsp = 0x00007ffe8c6d64c0    rip = 0x0000794687143bf0
+    Found by: stack scanning
+10  libc++.so.1 + 0x12efcf
+     rsp = 0x00007ffe8c6d64e8    rip = 0x0000794687135fd0
+    Found by: stack scanning
+11  libc++.so.1 + 0x13ce1f
+     rsp = 0x00007ffe8c6d6518    rip = 0x0000794687143e20
+    Found by: stack scanning
+12  qemu-system-x86_64-headless + 0x19c70a7
+     rsp = 0x00007ffe8c6d6590    rip = 0x00006396bccc20a8
+    Found by: stack scanning
+13  libandroid-emu-metrics.so + 0x28d9d7
+     rsp = 0x00007ffe8c6d6598    rip = 0x0000794686ec79d8
+    Found by: stack scanning
+14  qemu-system-x86_64-headless + 0x375984
+     rsp = 0x00007ffe8c6d65a8    rip = 0x00006396bb670985
+    Found by: stack scanning
+15  qemu-system-x86_64-headless + 0x918e7f
+     rsp = 0x00007ffe8c6d65b0    rip = 0x00006396bbc13e80
+    Found by: stack scanning
+16  libtcmalloc_minimal.so.4 + 0x269b97
+     rsp = 0x00007ffe8c6d65f0    rip = 0x0000794689069b98
+    Found by: stack scanning
+17  ld-linux-x86-64.so.2 + 0x79f
+     rsp = 0x00007ffe8c6d65f8    rip = 0x00007946892a97a0
+    Found by: stack scanning
+18  ld-linux-x86-64.so.2 + 0x3aaef
+     rsp = 0x00007ffe8c6d6600    rip = 0x00007946892e3af0
+    Found by: stack scanning
+19  libtcmalloc_minimal.so.4 + 0x269aff
+     rsp = 0x00007ffe8c6d6610    rip = 0x0000794689069b00
+    Found by: stack scanning
+20  libtcmalloc_minimal.so.4 + 0x24e47
+     rsp = 0x00007ffe8c6d6620    rip = 0x0000794688e24e48
+    Found by: stack scanning
+21  libtcmalloc_minimal.so.4 + 0x269b97
+     rsp = 0x00007ffe8c6d6628    rip = 0x0000794689069b98
+    Found by: stack scanning
+22  libtcmalloc_minimal.so.4 + 0x250bf
+     rsp = 0x00007ffe8c6d6630    rip = 0x0000794688e250c0
+    Found by: stack scanning
+23  libtcmalloc_minimal.so.4 + 0x5297
+     rsp = 0x00007ffe8c6d6638    rip = 0x0000794688e05298
+    Found by: stack scanning
+24  libc.so.6 + 0x21a087
+     rsp = 0x00007ffe8c6d6650    rip = 0x00007946863f8088
+    Found by: stack scanning
+25  libandroid-webrtc.so + 0x6d7aa2
+     rsp = 0x00007ffe8c6d6658    rip = 0x000079468781baa3
+    Found by: stack scanning
+26  ld-linux-x86-64.so.2 + 0x12f70
+     rsp = 0x00007ffe8c6d6670    rip = 0x00007946892bbf71
+    Found by: stack scanning
+27  libtcmalloc_minimal.so.4 + 0x24e47
+     rsp = 0x00007ffe8c6d6690    rip = 0x0000794688e24e48
+    Found by: stack scanning
+28  libtcmalloc_minimal.so.4 + 0x269b97
+     rsp = 0x00007ffe8c6d6698    rip = 0x0000794689069b98
+    Found by: stack scanning
+29  ld-linux-x86-64.so.2 + 0x507
+     rsp = 0x00007ffe8c6d66a0    rip = 0x00007946892a9508
+    Found by: stack scanning
+30  ld-linux-x86-64.so.2 + 0xb7e8
+     rsp = 0x00007ffe8c6d66b0    rip = 0x00007946892b47e9
+    Found by: stack scanning
+31  libtcmalloc_minimal.so.4 + 0x269b97
+     rsp = 0x00007ffe8c6d66c8    rip = 0x0000794689069b98
+    Found by: stack scanning
+32  libc.so.6 + 0x27f7
+     rsp = 0x00007ffe8c6d66e0    rip = 0x00007946861e07f8
+    Found by: stack scanning
+33  ld-linux-x86-64.so.2 + 0x94f
+     rsp = 0x00007ffe8c6d66e8    rip = 0x00007946892a9950
+    Found by: stack scanning
+34  libtcmalloc_minimal.so.4 + 0x23a87
+     rsp = 0x00007ffe8c6d6710    rip = 0x0000794688e23a88
+    Found by: stack scanning
+35  libc.so.6 + 0x1b7df
+     rsp = 0x00007ffe8c6d6720    rip = 0x00007946861f97e0
+    Found by: stack scanning
+36  libtcmalloc_minimal.so.4 + 0x269b97
+     rsp = 0x00007ffe8c6d6728    rip = 0x0000794689069b98
+    Found by: stack scanning
+37  libtcmalloc_minimal.so.4 + 0x1d13f
+     rsp = 0x00007ffe8c6d6760    rip = 0x0000794688e1d140
+    Found by: stack scanning
+38  libtcmalloc_minimal.so.4 + 0x253b7f
+     rsp = 0x00007ffe8c6d6790    rip = 0x0000794689053b80
+    Found by: stack scanning
+39  libtcmalloc_minimal.so.4 + 0x1cdc0
+     rsp = 0x00007ffe8c6d67a0    rip = 0x0000794688e1cdc1
+    Found by: stack scanning
+40  libtcmalloc_minimal.so.4 + 0x253b7f
+     rsp = 0x00007ffe8c6d67c0    rip = 0x0000794689053b80
+    Found by: stack scanning
+41  libtcmalloc_minimal.so.4 + 0x1cd7f
+     rsp = 0x00007ffe8c6d67d0    rip = 0x0000794688e1cd80
+    Found by: stack scanning
+42  libtcmalloc_minimal.so.4 + 0x253bbf
+     rsp = 0x00007ffe8c6d67e0    rip = 0x0000794689053bc0
+    Found by: stack scanning
+43  libtcmalloc_minimal.so.4 + 0x2351e
+     rsp = 0x00007ffe8c6d67f0    rip = 0x0000794688e2351f
+    Found by: stack scanning
+44  ld-linux-x86-64.so.2 + 0x61f
+     rsp = 0x00007ffe8c6d6838    rip = 0x00007946892a9620
+    Found by: stack scanning
+45  ld-linux-x86-64.so.2 + 0x3aaef
+     rsp = 0x00007ffe8c6d6840    rip = 0x00007946892e3af0
+    Found by: stack scanning
+46  libtcmalloc_minimal.so.4 + 0x269b97
+     rsp = 0x00007ffe8c6d6848    rip = 0x0000794689069b98
+    Found by: stack scanning
+47  libtcmalloc_minimal.so.4 + 0x269b97
+     rsp = 0x00007ffe8c6d6858    rip = 0x0000794689069b98
+    Found by: stack scanning
+48  libtcmalloc_minimal.so.4 + 0x253b7f
+     rsp = 0x00007ffe8c6d6860    rip = 0x0000794689053b80
+    Found by: stack scanning
+49  ld-linux-x86-64.so.2 + 0xb37b
+     rsp = 0x00007ffe8c6d6880    rip = 0x00007946892b437c
+    Found by: stack scanning
+50  libc.so.6 + 0x4acf
+     rsp = 0x00007ffe8c6d6890    rip = 0x00007946861e2ad0
+    Found by: stack scanning
+51  libc.so.6 + 0x28bb
+     rsp = 0x00007ffe8c6d68a0    rip = 0x00007946861e08bc
+    Found by: stack scanning
+52  ld-linux-x86-64.so.2 + 0xb7e8
+     rsp = 0x00007ffe8c6d68b0    rip = 0x00007946892b47e9
+    Found by: stack scanning
+53  libc.so.6 + 0x1664f
+     rsp = 0x00007ffe8c6d68c0    rip = 0x00007946861f4650
+    Found by: stack scanning
+54  libc.so.6 + 0x1664f
+     rsp = 0x00007ffe8c6d68e8    rip = 0x00007946861f4650
+    Found by: stack scanning
+55  libtcmalloc_minimal.so.4 + 0x253b7f
+     rsp = 0x00007ffe8c6d6910    rip = 0x0000794689053b80
+    Found by: stack scanning
+56  qemu-system-x86_64-headless + 0x63a50
+     rsp = 0x00007ffe8c6d6920    rip = 0x00006396bb35ea51
+    Found by: stack scanning
+57  qemu-system-x86_64-headless + 0x53af
+     rsp = 0x00007ffe8c6d6928    rip = 0x00006396bb3003b0
+    Found by: stack scanning
+58  libtcmalloc_minimal.so.4 + 0x253b7f
+     rsp = 0x00007ffe8c6d6960    rip = 0x0000794689053b80
+    Found by: stack scanning
+59  qemu-system-x86_64-headless + 0x63a50
+     rsp = 0x00007ffe8c6d6990    rip = 0x00006396bb35ea51
+    Found by: stack scanning
+60  ld-linux-x86-64.so.2 + 0xc210
+     rsp = 0x00007ffe8c6d69b0    rip = 0x00007946892b5211
+    Found by: stack scanning
+61  ld-linux-x86-64.so.2 + 0xb2a6
+     rsp = 0x00007ffe8c6d69c0    rip = 0x00007946892b42a7
+    Found by: stack scanning
+62  libandroid-webrtc.so + 0x2ef
+     rsp = 0x00007ffe8c6d69d0    rip = 0x00007946871442f0
+    Found by: stack scanning
+63  libandroid-webrtc.so + 0x185807
+     rsp = 0x00007ffe8c6d69e0    rip = 0x00007946872c9808
+    Found by: stack scanning
+64  libtcmalloc_minimal.so.4 + 0x3ea2ef
+     rsp = 0x00007ffe8c6d69f0    rip = 0x00007946891ea2f0
+    Found by: stack scanning
+65  ld-linux-x86-64.so.2 + 0xb2a6
+     rsp = 0x00007ffe8c6d6a00    rip = 0x00007946892b42a7
+    Found by: stack scanning
+66  libandroid-webrtc.so + 0x2ef
+     rsp = 0x00007ffe8c6d6a10    rip = 0x00007946871442f0
+    Found by: stack scanning
+67  libandroid-webrtc.so + 0x16eca3
+     rsp = 0x00007ffe8c6d6a20    rip = 0x00007946872b2ca4
+    Found by: stack scanning
+68  ld-linux-x86-64.so.2 + 0xb7e8
+     rsp = 0x00007ffe8c6d6a30    rip = 0x00007946892b47e9
+    Found by: stack scanning
+69  ld-linux-x86-64.so.2 + 0xb37b
+     rsp = 0x00007ffe8c6d6a40    rip = 0x00007946892b437c
+    Found by: stack scanning
+70  libc.so.6 + 0x1bf79
+     rsp = 0x00007ffe8c6d6ae0    rip = 0x00007946861f9f7a
+    Found by: stack scanning
+71  libc.so.6 + 0x4c67
+     rsp = 0x00007ffe8c6d6ae8    rip = 0x00007946861e2c68
+    Found by: stack scanning
+72  libc.so.6 + 0x1bf79
+     rsp = 0x00007ffe8c6d6b50    rip = 0x00007946861f9f7a
+    Found by: stack scanning
+73  ld-linux-x86-64.so.2 + 0xc210
+     rsp = 0x00007ffe8c6d6b70    rip = 0x00007946892b5211
+    Found by: stack scanning
+74  libtcmalloc_minimal.so.4 + 0x231a2
+     rsp = 0x00007ffe8c6d6bf0    rip = 0x0000794688e231a3
+    Found by: stack scanning
+75  ld-linux-x86-64.so.2 + 0x907
+     rsp = 0x00007ffe8c6d6bf8    rip = 0x00007946892a9908
+    Found by: stack scanning
+76  ld-linux-x86-64.so.2 + 0x3aaef
+     rsp = 0x00007ffe8c6d6c00    rip = 0x00007946892e3af0
+    Found by: stack scanning
+77  qemu-system-x86_64-headless + 0x159ebcf
+     rsp = 0x00007ffe8c6d6c10    rip = 0x00006396bc899bd0
+    Found by: stack scanning
+78  ld-linux-x86-64.so.2 + 0x12f70
+     rsp = 0x00007ffe8c6d6c30    rip = 0x00007946892bbf71
+    Found by: stack scanning
+79  libc.so.6 + 0x21a1b7
+     rsp = 0x00007ffe8c6d6c50    rip = 0x00007946863f81b8
+    Found by: stack scanning
+80  qemu-system-x86_64-headless + 0x9178df
+     rsp = 0x00007ffe8c6d6c58    rip = 0x00006396bbc128e0
+    Found by: stack scanning
+81  ld-linux-x86-64.so.2 + 0x3a03f
+     rsp = 0x00007ffe8c6d6c68    rip = 0x00007946892e3040
+    Found by: stack scanning
+82  ld-linux-x86-64.so.2 + 0x12f70
+     rsp = 0x00007ffe8c6d6c70    rip = 0x00007946892bbf71
+    Found by: stack scanning
+83  ld-linux-x86-64.so.2 + 0x907
+     rsp = 0x00007ffe8c6d6c88    rip = 0x00007946892a9908
+    Found by: stack scanning
+84  ld-linux-x86-64.so.2 + 0x1b65f
+     rsp = 0x00007ffe8c6d6c90    rip = 0x00007946892c4660
+    Found by: stack scanning
+85  qemu-system-x86_64-headless + 0x3c4476
+     rsp = 0x00007ffe8c6d6c98    rip = 0x00006396bb6bf477
+    Found by: stack scanning
+86  qemu-system-x86_64-headless + 0x9178df
+     rsp = 0x00007ffe8c6d6cb8    rip = 0x00006396bbc128e0
+    Found by: stack scanning
+87  ld-linux-x86-64.so.2 + 0x15dad
+     rsp = 0x00007ffe8c6d6cc0    rip = 0x00007946892bedae
+    Found by: stack scanning
+88  libtcmalloc_minimal.so.4 + 0x24d7bf
+     rsp = 0x00007ffe8c6d6d40    rip = 0x000079468904d7c0
+    Found by: stack scanning
+89  libtcmalloc_minimal.so.4 + 0x1ce5a
+     rsp = 0x00007ffe8c6d6d50    rip = 0x0000794688e1ce5b
+    Found by: stack scanning
+90  libtcmalloc_minimal.so.4 + 0x24d7bf
+     rsp = 0x00007ffe8c6d6d60    rip = 0x000079468904d7c0
+    Found by: stack scanning
+91  qemu-system-x86_64-headless + 0x19dc23f
+     rsp = 0x00007ffe8c6d6d68    rip = 0x00006396bccd7240
+    Found by: stack scanning
+92  qemu-system-x86_64-headless + 0x14fb6f7
+     rsp = 0x00007ffe8c6d6d70    rip = 0x00006396bc7f66f8
+    Found by: stack scanning
+93  qemu-system-x86_64-headless + 0x14fb6f7
+     rsp = 0x00007ffe8c6d6d78    rip = 0x00006396bc7f66f8
+    Found by: stack scanning
+94  qemu-system-x86_64-headless + 0x19dc23f
+     rsp = 0x00007ffe8c6d6d88    rip = 0x00006396bccd7240
+    Found by: stack scanning
+95  qemu-system-x86_64-headless + 0x14fb6f7
+     rsp = 0x00007ffe8c6d6d90    rip = 0x00006396bc7f66f8
+    Found by: stack scanning
+96  libtcmalloc_minimal.so.4 + 0x24c477
+     rsp = 0x00007ffe8c6d6e10    rip = 0x000079468904c478
+    Found by: stack scanning
+97  libtcmalloc_minimal.so.4 + 0x24c477
+     rsp = 0x00007ffe8c6d6f50    rip = 0x000079468904c478
+    Found by: stack scanning
+98  qemu-system-x86_64-headless + 0x14f7f7f
+     rsp = 0x00007ffe8c6d6f88    rip = 0x00006396bc7f2f80
+    Found by: stack scanning
+99  qemu-system-x86_64-headless + 0x10318e1
+     rsp = 0x00007ffe8c6d6f90    rip = 0x00006396bc32c8e2
+    Found by: stack scanning
+100  libtcmalloc_minimal.so.4 + 0x24c477
+     rsp = 0x00007ffe8c6d6fb0    rip = 0x000079468904c478
+    Found by: stack scanning
+101  qemu-system-x86_64-headless + 0x9178df
+     rsp = 0x00007ffe8c6d6fd0    rip = 0x00006396bbc128e0
+    Found by: stack scanning
+102  ld-linux-x86-64.so.2 + 0x3a03f
+     rsp = 0x00007ffe8c6d6fe0    rip = 0x00007946892e3040
+    Found by: stack scanning
+103  libc.so.6 + 0x29d8f
+     rsp = 0x00007ffe8c6d6ff0    rip = 0x0000794686207d90
+    Found by: stack scanning
+104  qemu-system-x86_64-headless + 0x9178df
+     rsp = 0x00007ffe8c6d7000    rip = 0x00006396bbc128e0
+    Found by: stack scanning
+105  qemu-system-x86_64-headless + 0x9178df
+     rsp = 0x00007ffe8c6d7030    rip = 0x00006396bbc128e0
+    Found by: stack scanning
+106  ld-linux-x86-64.so.2 + 0x3a03f
+     rsp = 0x00007ffe8c6d7040    rip = 0x00007946892e3040
+    Found by: stack scanning
+107  libc.so.6 + 0x29e3f
+     rsp = 0x00007ffe8c6d7090    rip = 0x0000794686207e40
+    Found by: stack scanning
+108  qemu-system-x86_64-headless + 0x788c3f
+     rsp = 0x00007ffe8c6d70c0    rip = 0x00006396bba83c40
+    Found by: stack scanning
+109  qemu-system-x86_64-headless + 0x788c68
+     rsp = 0x00007ffe8c6d70e0    rip = 0x00006396bba83c69
+    Found by: stack scanning
+
+Thread 1 qemu-system-x86
+ 0  libc.so.6 + 0x11e88d
+     rax = 0xfffffffffffffe00    rdx = 0x00000000ffffffff
+     rcx = 0x00007946862fc88d    rbx = 0x00006396bccc6cfc
+     rsi = 0x0000000000000000    rdi = 0x00006396bccc6cfc
+     rbp = 0x0000000000000000    rsp = 0x0000794686195658
+      r8 = 0x0000000000000000     r9 = 0x0000000000000000
+     r10 = 0x0000000000000000    r11 = 0x0000000000000202
+     r12 = 0x0000000000000000    r13 = 0x0000000000000000
+     r14 = 0x0000000000000000    r15 = 0x00006396bccc6d10
+     rip = 0x00007946862fc88d
+    Found by: given as instruction pointer in context
+ 1  qemu-system-x86_64-headless + 0xbad06e
+     rsp = 0x0000794686195660    rip = 0x00006396bbea806f
+    Found by: stack scanning
+ 2  qemu-system-x86_64-headless + 0x19cbcfb
+     rsp = 0x0000794686195678    rip = 0x00006396bccc6cfc
+    Found by: stack scanning
+ 3  qemu-system-x86_64-headless + 0xbb0d89
+     rsp = 0x0000794686195680    rip = 0x00006396bbeabd8a
+    Found by: stack scanning
+ 4  qemu-system-x86_64-headless + 0xbb0cbf
+     rsp = 0x00007946861956a0    rip = 0x00006396bbeabcc0
+    Found by: stack scanning
+ 5  qemu-system-x86_64-headless + 0xbad35f
+     rsp = 0x00007946861956b0    rip = 0x00006396bbea8360
+    Found by: stack scanning
+ 6  libc.so.6 + 0x947cf
+     rsp = 0x00007946861956d0    rip = 0x00007946862727d0
+    Found by: stack scanning
+ 7  libc.so.6 + 0x94ac2
+     rsp = 0x00007946861956e0    rip = 0x0000794686272ac3
+    Found by: stack scanning
+ 8  libc.so.6 + 0x947cf
+     rsp = 0x0000794686195718    rip = 0x00007946862727d0
+    Found by: stack scanning
+ 9  libc.so.6 + 0x12684f
+     rsp = 0x0000794686195780    rip = 0x0000794686304850
+    Found by: stack scanning
+Thread 2 qemu-system-x86
+ 0  libc.so.6 + 0x91117
+     rax = 0xfffffffffffffdfc    rdx = 0x0000000000000000
+     rcx = 0x000079468626f117    rbx = 0x0000000000000000
+     rsi = 0x0000000000000189    rdi = 0x00006396bd5b0280
+     rbp = 0x00006396bd5b0258    rsp = 0x0000794685990450
+      r8 = 0x0000000000000000     r9 = 0x00000000ffffffff
+     r10 = 0x0000794685990578    r11 = 0x0000000000000246
+     r12 = 0x0000000000000000    r13 = 0x0000000000000000
+     r14 = 0x00006396bd5b0280    r15 = 0x0000000000000000
+     rip = 0x000079468626f117
+    Found by: given as instruction pointer in context
+ 1  libc.so.6 + 0x93e9a
+     rsp = 0x0000794685990490    rip = 0x0000794686271e9b
+    Found by: stack scanning
+ 2  libc.so.6 + 0x9371f
+     rsp = 0x00007946859904e8    rip = 0x0000794686271720
+    Found by: stack scanning
+ 3  libtcmalloc_minimal.so.4 + 0x24c477
+     rsp = 0x0000794685990528    rip = 0x000079468904c478
+    Found by: stack scanning
+ 4  libtcmalloc_minimal.so.4 + 0x24dc7f
+     rsp = 0x0000794685990538    rip = 0x000079468904dc80
+    Found by: stack scanning
+ 5  libandroid-webrtc.so + 0x71d9f5
+     rsp = 0x0000794685990568    rip = 0x00007946878619f6
+    Found by: stack scanning
+ 6  libc++.so.1 + 0xc9b89
+     rsp = 0x0000794685990570    rip = 0x00007946870d0b8a
+    Found by: stack scanning
+ 7  libandroid-webrtc.so + 0x116006c
+     rsp = 0x0000794685990590    rip = 0x00007946882a406d
+    Found by: stack scanning
+ 8  libandroid-webrtc.so + 0x11604b9
+     rsp = 0x0000794685990630    rip = 0x00007946882a44ba
+    Found by: stack scanning
+ 9  libandroid-webrtc.so + 0x1b1b4af
+     rsp = 0x0000794685990638    rip = 0x0000794688c5f4b0
+    Found by: stack scanning
+10  libandroid-emu-metrics.so + 0x217f7c
+     rsp = 0x0000794685990640    rip = 0x0000794686e51f7d
+    Found by: stack scanning
+11  libc.so.6 + 0x947cf
+     rsp = 0x00007946859906a8    rip = 0x00007946862727d0
+    Found by: stack scanning
+12  libandroid-webrtc.so + 0x11614bb
+     rsp = 0x00007946859906c0    rip = 0x00007946882a54bc
+    Found by: stack scanning
+13  libc.so.6 + 0x947cf
+     rsp = 0x00007946859906d0    rip = 0x00007946862727d0
+    Found by: stack scanning
+14  libc.so.6 + 0x94ac2
+     rsp = 0x00007946859906e0    rip = 0x0000794686272ac3
+    Found by: stack scanning
+15  libc.so.6 + 0x947cf
+     rsp = 0x0000794685990718    rip = 0x00007946862727d0
+    Found by: stack scanning
+16  libc.so.6 + 0x12684f
+     rsp = 0x0000794685990780    rip = 0x0000794686304850
+    Found by: stack scanning
+Thread 3 qemu-system-x86
+ 0  linux-vdso.so.1 + 0xb03
+     rax = 0x00000000389b4f30    rdx = 0x0000000000005766
+     rcx = 0x0000000000000000    rbx = 0x0000000000000001
+     rsi = 0x000079468518b0c0    rdi = 0x0000000000000001
+     rbp = 0x000079468518b0a0    rsp = 0x000079468518b088
+      r8 = 0x0000794685189b00     r9 = 0x0000000000000000
+     r10 = 0x000079468518b0c0    r11 = 0x00007ffe8c7e4080
+     r12 = 0x0000000000d7e7b8    r13 = 0x0000000000000000
+     r14 = 0x000079468518b148    r15 = 0x00006396bd541680
+     rip = 0x00007ffe8c7e8b03
+    Found by: given as instruction pointer in context
+ 1  libc.so.6 + 0xe566c
+     rsp = 0x000079468518b0b0    rip = 0x00007946862c366d
+    Found by: stack scanning
+ 2  libandroid-emu-curl.so + 0x116b64
+     rsp = 0x000079468518b0c0    rip = 0x0000794686accb65
+    Found by: stack scanning
+ 3  libandroid-emu-curl.so + 0xf23d6
+     rsp = 0x000079468518b0f0    rip = 0x0000794686aa83d7
+    Found by: stack scanning
+ 4  libandroid-emu-curl.so + 0x104ca9
+     rsp = 0x000079468518b120    rip = 0x0000794686abacaa
+    Found by: stack scanning
+ 5  libandroid-emu-curl.so + 0x103e0b
+     rsp = 0x000079468518b1e0    rip = 0x0000794686ab9e0c
+    Found by: stack scanning
+ 6  libandroid-emu-curl.so + 0x116b64
+     rsp = 0x000079468518b210    rip = 0x0000794686accb65
+    Found by: stack scanning
+ 7  libandroid-emu-curl.so + 0x10276e
+     rsp = 0x000079468518b240    rip = 0x0000794686ab876f
+    Found by: stack scanning
+ 8  libc.so.6 + 0xe566c
+     rsp = 0x000079468518b270    rip = 0x00007946862c366d
+    Found by: stack scanning
+ 9  libandroid-emu-curl.so + 0x103700
+     rsp = 0x000079468518b2b0    rip = 0x0000794686ab9701
+    Found by: stack scanning
+10  libc.so.6 + 0xe566c
+     rsp = 0x000079468518b2d0    rip = 0x00007946862c366d
+    Found by: stack scanning
+11  libc.so.6 + 0xe566c
+     rsp = 0x000079468518b310    rip = 0x00007946862c366d
+    Found by: stack scanning
+12  libandroid-emu-curl.so + 0xf1739
+     rsp = 0x000079468518b380    rip = 0x0000794686aa773a
+    Found by: stack scanning
+13  libandroid-webrtc.so + 0x76a58f
+     rsp = 0x000079468518b3c8    rip = 0x00007946878ae590
+    Found by: stack scanning
+14  libc.so.6 + 0xa858e
+     rsp = 0x000079468518b3d0    rip = 0x000079468628658f
+    Found by: stack scanning
+15  libandroid-emu-curl.so + 0x11376c
+     rsp = 0x000079468518b3f0    rip = 0x0000794686ac976d
+    Found by: stack scanning
+16  libandroid-webrtc.so + 0x114e95f
+     rsp = 0x000079468518b408    rip = 0x0000794688292960
+    Found by: stack scanning
+17  libandroid-emu-curl.so + 0x115757
+     rsp = 0x000079468518b420    rip = 0x0000794686acb758
+    Found by: stack scanning
+18  libandroid-webrtc.so + 0x114e95f
+     rsp = 0x000079468518b450    rip = 0x0000794688292960
+    Found by: stack scanning
+19  libandroid-webrtc.so + 0x114e95f
+     rsp = 0x000079468518b470    rip = 0x0000794688292960
+    Found by: stack scanning
+20  libandroid-emu-curl.so + 0x118f9a
+     rsp = 0x000079468518b490    rip = 0x0000794686acef9b
+    Found by: stack scanning
+21  libandroid-emu-protos.so + 0x102bcf
+     rsp = 0x000079468518b498    rip = 0x000079468686abd0
+    Found by: stack scanning
+22  libandroid-webrtc.so + 0x114e95f
+     rsp = 0x000079468518b4a8    rip = 0x0000794688292960
+    Found by: stack scanning
+23  libandroid-emu-curl.so + 0xf1414
+     rsp = 0x000079468518b4c0    rip = 0x0000794686aa7415
+    Found by: stack scanning
+24  libandroid-webrtc.so + 0x114e95f
+     rsp = 0x000079468518b4e8    rip = 0x0000794688292960
+    Found by: stack scanning
+25  libandroid-emu-curl.so + 0xf109e
+     rsp = 0x000079468518b500    rip = 0x0000794686aa709f
+    Found by: stack scanning
+26  libtcmalloc_minimal.so.4 + 0x22e5e
+     rsp = 0x000079468518b510    rip = 0x0000794688e22e5f
+    Found by: stack scanning
+27  libandroid-webrtc.so + 0x76a58f
+     rsp = 0x000079468518b528    rip = 0x00007946878ae590
+    Found by: stack scanning
+28  libandroid-webrtc.so + 0x114e95f
+     rsp = 0x000079468518b540    rip = 0x0000794688292960
+    Found by: stack scanning
+29  libandroid-emu-curl.so + 0xf0f20
+     rsp = 0x000079468518b550    rip = 0x0000794686aa6f21
+    Found by: stack scanning
+30  libandroid-webrtc.so + 0x114f433
+     rsp = 0x000079468518b5a0    rip = 0x0000794688293434
+    Found by: stack scanning
+31  libandroid-emu-protos.so + 0x102bcf
+     rsp = 0x000079468518b5f0    rip = 0x000079468686abd0
+    Found by: stack scanning
+32  libandroid-webrtc.so + 0x1cb146f
+     rsp = 0x000079468518b628    rip = 0x0000794688df5470
+    Found by: stack scanning
+33  libandroid-webrtc.so + 0x114f349
+     rsp = 0x000079468518b630    rip = 0x000079468829334a
+    Found by: stack scanning
+34  libandroid-webrtc.so + 0x1b19daf
+     rsp = 0x000079468518b638    rip = 0x0000794688c5ddb0
+    Found by: stack scanning
+35  libandroid-emu-metrics.so + 0x217f7c
+     rsp = 0x000079468518b640    rip = 0x0000794686e51f7d
+    Found by: stack scanning
+36  libtcmalloc_minimal.so.4 + 0x2f051
+     rsp = 0x000079468518b650    rip = 0x0000794688e2f052
+    Found by: stack scanning
+37  libtcmalloc_minimal.so.4 + 0x269b97
+     rsp = 0x000079468518b670    rip = 0x0000794689069b98
+    Found by: stack scanning
+38  libc.so.6 + 0x947cf
+     rsp = 0x000079468518b6a8    rip = 0x00007946862727d0
+    Found by: stack scanning
+39  libandroid-webrtc.so + 0x11614bb
+     rsp = 0x000079468518b6c0    rip = 0x00007946882a54bc
+    Found by: stack scanning
+40  libc.so.6 + 0x947cf
+     rsp = 0x000079468518b6d0    rip = 0x00007946862727d0
+    Found by: stack scanning
+41  libc.so.6 + 0x94ac2
+     rsp = 0x000079468518b6e0    rip = 0x0000794686272ac3
+    Found by: stack scanning
+42  libc.so.6 + 0x947cf
+     rsp = 0x000079468518b718    rip = 0x00007946862727d0
+    Found by: stack scanning
+43  libc.so.6 + 0x12684f
+     rsp = 0x000079468518b780    rip = 0x0000794686304850
+    Found by: stack scanning
+Thread 4 qemu-system-x86
+ 0  libc.so.6 + 0x118bcf
+     rax = 0xfffffffffffffdfc    rdx = 0x0000000000001388
+     rcx = 0x00007946862f6bcf    rbx = 0x0000000000000000
+     rsi = 0x0000000000000001    rdi = 0x0000794684984cc8
+     rbp = 0x00000000160d7614    rsp = 0x0000794684984b70
+      r8 = 0x0000000000000000     r9 = 0x0000000000000000
+     r10 = 0x0000000000004000    r11 = 0x0000000000000293
+     r12 = 0x0000000000000001    r13 = 0x0000794684984c90
+     r14 = 0x0000794684984cc8    r15 = 0x0000794684987cf8
+     rip = 0x00007946862f6bcf
+    Found by: given as instruction pointer in context
+ 1  libc.so.6 + 0x14f124
+     rsp = 0x0000794684984ba0    rip = 0x000079468632d125
+    Found by: stack scanning
+Thread 5 qemu-system-x86
+ 0  libc.so.6 + 0x11b63d
+     rax = 0xfffffffffffffdfe    rdx = 0x00006396bd541880
+     rcx = 0x00007946862f963d    rbx = 0x0000794684181458
+     rsi = 0x00006396bd541980    rdi = 0x0000000000000001
+     rbp = 0x00006396bd541980    rsp = 0x00007946841813c0
+      r8 = 0x00007946841813d0     r9 = 0x0000000000000000
+     r10 = 0x00006396bd541800    r11 = 0x0000000000000246
+     r12 = 0x0000000000000001    r13 = 0x00007946841813d0
+     r14 = 0x0000000000000000    r15 = 0x00006396bd541880
+     rip = 0x00007946862f963d
+    Found by: given as instruction pointer in context
+ 1  qemu-system-x86_64-headless + 0x10da786
+     rsp = 0x0000794684181430    rip = 0x00006396bc3d5787
+    Found by: stack scanning
+ 2  qemu-system-x86_64-headless + 0x106156b
+     rsp = 0x00007946841814a0    rip = 0x00006396bc35c56c
+    Found by: stack scanning
+ 3  qemu-system-x86_64-headless + 0x1061038
+     rsp = 0x00007946841814b0    rip = 0x00006396bc35c039
+    Found by: stack scanning
+ 4  qemu-system-x86_64-headless + 0x109304f
+     rsp = 0x0000794684181508    rip = 0x00006396bc38e050
+    Found by: stack scanning
+ 5  qemu-system-x86_64-headless + 0x1061b5f
+     rsp = 0x0000794684181510    rip = 0x00006396bc35cb60
+    Found by: stack scanning
+ 6  qemu-system-x86_64-headless + 0x1092cff
+     rsp = 0x0000794684181528    rip = 0x00006396bc38dd00
+    Found by: stack scanning
+ 7  qemu-system-x86_64-headless + 0x106111f
+     rsp = 0x0000794684181530    rip = 0x00006396bc35c120
+    Found by: stack scanning
+ 8  qemu-system-x86_64-headless + 0x19d9c4f
+     rsp = 0x00007946841815a0    rip = 0x00006396bccd4c50
+    Found by: stack scanning
+ 9  qemu-system-x86_64-headless + 0x105a27d
+     rsp = 0x00007946841815d0    rip = 0x00006396bc35527e
+    Found by: stack scanning
+10  libandroid-emu-metrics.so + 0x217f7c
+     rsp = 0x0000794684181640    rip = 0x0000794686e51f7d
+    Found by: stack scanning
+11  libc.so.6 + 0x947cf
+     rsp = 0x00007946841816a8    rip = 0x00007946862727d0
+    Found by: stack scanning
+12  libandroid-webrtc.so + 0x11614bb
+     rsp = 0x00007946841816c0    rip = 0x00007946882a54bc
+    Found by: stack scanning
+13  libc.so.6 + 0x947cf
+     rsp = 0x00007946841816d0    rip = 0x00007946862727d0
+    Found by: stack scanning
+14  libc.so.6 + 0x94ac2
+     rsp = 0x00007946841816e0    rip = 0x0000794686272ac3
+    Found by: stack scanning
+15  libc.so.6 + 0x947cf
+     rsp = 0x0000794684181718    rip = 0x00007946862727d0
+    Found by: stack scanning
+16  libc.so.6 + 0x12684f
+     rsp = 0x0000794684181780    rip = 0x0000794686304850
+    Found by: stack scanning
+
+Loaded modules:
+0x6396bb2fb000 - 0x6396bcce3697  qemu-system-x86_64-headless  0.0.0.0  (main)
+0x79468619c000 - 0x7946861b30df  libbsd.so.0  0.0.0.0
+0x7946861b4000 - 0x7946861dd287  libxcb.so.1  0.0.0.0
+0x7946861de000 - 0x794686406e4f  libc.so.6  0.0.0.0
+0x794686407000 - 0x7946864ed107  libm.so.6  0.0.0.0
+0x7946864ee000 - 0x7946867673d3  libprotobuf.so.32  0.0.0.0
+0x794686768000 - 0x794686875fa3  libandroid-emu-protos.so  0.0.0.0
+0x794686876000 - 0x7946869b5d2f  libX11.so.6  0.0.0.0
+0x7946869b6000 - 0x794686c39047  libandroid-emu-curl.so  0.0.0.0
+0x794686c3a000 - 0x794686ec7fd7  libandroid-emu-metrics.so  0.0.0.0
+0x794686ec8000 - 0x794687006f03  libglib2_linux-x86_64.so  0.0.0.0
+0x794687007000 - 0x794687143f6f  libc++.so.1  0.0.0.0
+0x794687144000 - 0x794688dffc47  libandroid-webrtc.so  0.0.0.0
+0x794688e00000 - 0x7946891f0fa7  libtcmalloc_minimal.so.4  0.0.0.0
+0x7946891f1000 - 0x7946891fd0e7  libmd.so.0  0.0.0.0
+0x7946891fe000 - 0x79468920507f  libXdmcp.so.6  0.0.0.0
+0x794689206000 - 0x79468920b107  libXau.so.6  0.0.0.0
+0x79468920e000 - 0x79468922d2e7  libgcc_s.so.1  0.0.0.0
+0x79468922e000 - 0x79468925c587  libandroid-emu-base-logging.so  0.0.0.0
+0x79468925d000 - 0x794689262c1f  libandroid-emu-agents.so  0.0.0.0
+0x794689265000 - 0x794689269027  libdl.so.2  0.0.0.0
+0x79468926c000 - 0x794689270027  libpthread.so.0  0.0.0.0
+0x794689271000 - 0x794689275037  librt.so.1  0.0.0.0
+0x794689278000 - 0x79468928627f  libemugl_common.so  0.0.0.0
+0x794689287000 - 0x79468929d79f  libandroid-emu-tracing.so  0.0.0.0
+0x79468929e000 - 0x7946892a2027  libutil.so.1  0.0.0.0
+0x7946892a9000 - 0x7946892e42d7  ld-linux-x86-64.so.2  0.0.0.0
+0x7ffe8c7e8000 - 0x7ffe8c7e90aa  linux-vdso.so.1  0.0.0.0
+
+Unloaded modules:

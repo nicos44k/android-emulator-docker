@@ -1,0 +1,472 @@
+root@2d07d7f66c67:/home/jenkins# emulator @device -no-window -no-snapshot -noaudio -no-boot-anim -memory 2048 -accel on -camera-back none -gpu off -verbose
+
+INFO    | Storing crashdata in: /tmp/android-unknown/emu-crash-34.1.20.db, detection is enabled for process: 19
+INFO    | Android emulator version 34.1.20.0 (build_id 11610631) (CL:N/A)
+DEBUG   | Current emulator version 34.1.20 is the same as the required version 34.1.20.
+INFO    | Found AVD name 'device'
+INFO    | Found AVD target architecture: x86_64
+INFO    | argv[0]: 'emulator'; program directory: '/home/jenkins/.android_sdk/emulator'
+INFO    | Found systemPath /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64/
+INFO    | emuDirName: '/home/jenkins/.android_sdk/emulator'
+INFO    | try dir /home/jenkins/.android_sdk/emulator
+INFO    | Trying emulator path '/home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless'
+INFO    | Found target-specific 64-bit emulator binary: /home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless
+INFO    | Adding library search path: '/home/jenkins/.android_sdk/emulator/lib64'
+INFO    | Adding library search path: '/home/jenkins/.android_sdk/emulator/lib64/gles_swiftshader'
+INFO    | Adding library search path: '/home/jenkins/.android_sdk/emulator/lib64/libstdc++'
+DEBUG   | emulator: Running :/home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless
+DEBUG   | qemu backend: argv[00] = "/home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless"
+DEBUG   | qemu backend: argv[01] = "@device"
+DEBUG   | qemu backend: argv[02] = "-no-window"
+DEBUG   | qemu backend: argv[03] = "-no-snapshot"
+DEBUG   | qemu backend: argv[04] = "-noaudio"
+DEBUG   | qemu backend: argv[05] = "-no-boot-anim"
+DEBUG   | qemu backend: argv[06] = "-memory"
+DEBUG   | qemu backend: argv[07] = "2048"
+DEBUG   | qemu backend: argv[08] = "-accel"
+DEBUG   | qemu backend: argv[09] = "on"
+DEBUG   | qemu backend: argv[10] = "-camera-back"
+DEBUG   | qemu backend: argv[11] = "none"
+DEBUG   | qemu backend: argv[12] = "-gpu"
+DEBUG   | qemu backend: argv[13] = "off"
+DEBUG   | qemu backend: argv[14] = "-verbose"
+DEBUG   | Concatenated backend parameters:  /home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless @device -no-window -no-snapshot -noaudio -no-boot-anim -memory 2048 -accel on -camera-back none -gpu off -verbose
+INFO    | Storing crashdata in: /tmp/android-unknown/emu-crash-34.1.20.db, detection is enabled for process: 19
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+DEBUG   | autoconfig: -skin 1080x1920
+DEBUG   | autoconfig: -skindir (null)
+DEBUG   | autoconfig: -kernel /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//kernel-ranchu
+DEBUG   | Target arch = 'x86_64'
+DEBUG   | Auto-detect: Kernel image requires new device naming scheme.
+DEBUG   | Auto-detect: Kernel does not support YAFFS2 partitions.
+DEBUG   | autoconfig: -ramdisk /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//ramdisk.img
+DEBUG   | Using initial system image: /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//system.img
+DEBUG   | Using initial vendor image: /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//vendor.img
+DEBUG   | autoconfig: -initdata /home/jenkins/.android/avd//../avd/device.avd/userdata.img
+DEBUG   | autoconfig: -cache /home/jenkins/.android/avd//../avd/device.avd/cache.img
+DEBUG   | Physical RAM size: 2048MB
+DEBUG   | VM heap size 0MB is below hardware specified minimum of 512MB,setting it to that value
+DEBUG   | System image is read only
+DEBUG   | Found 4 DNS servers:
+DEBUG   | 	192.168.55.1
+DEBUG   | 	192.168.50.37
+DEBUG   | 	192.168.55.1
+DEBUG   | 	192.168.50.37
+DEBUG   | Starting hostapd main loop.
+DEBUG   | found magic skin width=1080 height=1920 bpp=16
+WARNING | File System is not ext4, disable QuickbootFileBacked feature
+DEBUG   | Creating ext4 userdata partition: /home/jenkins/.android/avd//../avd/device.avd/data
+DEBUG   | path_copy_file: source file is un-readable: /root/.android/adbkey.pub
+DEBUG   | path_copy_file: source file is un-readable: /root/.android/adbkey
+DEBUG   | generate_key(/root/.android/adbkey)...
+WARNING | Failed to open /root/.android/adbkey
+WARNING | adbkey generation failed
+Creating filesystem with parameters:
+    Size: 6442450944
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 8192
+    Inode size: 256
+    Journal blocks: 24576
+    Label: 
+    Blocks: 1572864
+    Block groups: 48
+    Reserved block group size: 383
+Created filesystem with 29/393216 inodes and 52357/1572864 blocks
+DEBUG   | convert img from ext4 /home/jenkins/.android/avd//../avd/device.avd/userdata-qemu.img to qcow2 image /home/jenkins/.android/avd//../avd/device.avd/userdata-qemu.img.tmp.qcow2  succeeded, using 40 mini seconds
+DEBUG   | Creating empty ext4 cache partition: /home/jenkins/.android/avd//../avd/device.avd/cache.img
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+DEBUG   | CPU Acceleration: working
+DEBUG   | CPU Acceleration status: KVM (version 12) is installed and usable.
+DEBUG   | handleCpuAcceleration: feature check for hvf
+DEBUG   | Bluetooth requested by guest
+DEBUG   | started modem simulator host server at port: 42539
+DEBUG   | Path:/home/jenkins/.android_sdk/platform-tools/adb protocol version: 41
+DEBUG   | Path:/home/jenkins/.android_sdk/platform-tools/adb protocol version: 41 (2x)
+DEBUG   | Found: 3 adb executables
+DEBUG   | Adb: /home/jenkins/.android_sdk/platform-tools/adb
+DEBUG   | Adb: /home/jenkins/.android_sdk/platform-tools/adb (2x)
+DEBUG   | Path:/home/jenkins/.android_sdk/platform-tools/adb protocol version: 41
+DEBUG   | Path:/home/jenkins/.android_sdk/platform-tools/adb protocol version: 41 (2x)
+ERROR   | Unable to connect to adb daemon on port: 5037
+WARNING | Your AVD has been configured with an in-guest renderer, but the system image does not support guest rendering.Falling back to 'swiftshader_indirect' mode.
+library_mode swiftshader_indirect gpu mode swiftshader_indirect
+DEBUG   | GPU emulation enabled using 'swiftshader_indirect' mode
+DEBUG   | Initializing hardware OpenGLES emulation support
+Initializing hardware OpenGLES emulation supportandroid_startOpenglesRenderer: gpu infoI0423 14:06:59.821058      19 HealthMonitor.cpp:279] HealthMonitor disabled.
+DEBUG   | create display 0
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 1920 dpi 0
+cannot add library /home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/lib64/vulkan/libvulkan.so: failed
+cannot add library /home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/lib64/vulkan/libvulkan.so.1: failed
+added library /home/jenkins/.android_sdk/emulator/lib64/vulkan/libvulkan.so
+createGlobalVkEmulation:964 Selecting Vulkan device: SwiftShader Device (Subzero)
+initialize: Supports id properties, got a vulkan device UUID
+WARNING: could not open libX11.so, try libX11.so.6
+I0423 14:06:59.892168      19 VkCommonOperations.cpp:1226] Initializing VkEmulation features:
+I0423 14:06:59.892177      19 VkCommonOperations.cpp:1227]     glInteropSupported: false
+I0423 14:06:59.892180      19 VkCommonOperations.cpp:1228]     useDeferredCommands: true
+I0423 14:06:59.892184      19 VkCommonOperations.cpp:1230]     createResourceWithRequirements: true
+I0423 14:06:59.892186      19 VkCommonOperations.cpp:1231]     useVulkanComposition: false
+I0423 14:06:59.892189      19 VkCommonOperations.cpp:1232]     useVulkanNativeSwapchain: false
+I0423 14:06:59.892192      19 VkCommonOperations.cpp:1233]     enable guestRenderDoc: false
+I0423 14:06:59.892194      19 VkCommonOperations.cpp:1234]     ASTC LDR emulation mode: 2
+I0423 14:06:59.892197      19 VkCommonOperations.cpp:1235]     enable ETC2 emulation: true
+I0423 14:06:59.892199      19 VkCommonOperations.cpp:1236]     enable Ycbcr emulation: false
+I0423 14:06:59.892202      19 VkCommonOperations.cpp:1237]     guestUsesAngle: false
+I0423 14:06:59.892205      19 VkCommonOperations.cpp:1238]     useDedicatedAllocations: false
+I0423 14:06:59.892738      19 FrameBuffer.cpp:486] Graphics Adapter Vendor Google (Google Inc.)
+I0423 14:06:59.892743      19 FrameBuffer.cpp:487] Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+I0423 14:06:59.892747      19 FrameBuffer.cpp:488] Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+I0423 14:06:59.892749      19 FrameBuffer.cpp:489] Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888 
+I0423 14:06:59.892754      19 FrameBuffer.cpp:490] Graphics Device Extensions N/A
+INFO    | Setting vsync to 60 hz
+DEBUG   | OpenGL Vendor=[Google (Google Inc.)]
+OpenGL Vendor=[Google (Google Inc.)]DEBUG   | OpenGL Renderer=[Android Emulator OpenGL ES Translator (Google SwiftShader)]
+OpenGL Renderer=[Android Emulator OpenGL ES Translator (Google SwiftShader)]DEBUG   | OpenGL Version=[OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)]
+OpenGL Version=[OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)]DEBUG   | path_copy_file: source file is un-readable: /root/.android/adbkey
+WARNING | No adb private key exists
+DEBUG   | Found 4 DNS servers:
+DEBUG   | 	192.168.55.1
+DEBUG   | 	192.168.50.37
+DEBUG   | 	192.168.55.1
+DEBUG   | 	192.168.50.37
+INFO    | Content of hardware configuration file:
+INFO    | 	hw.cpu.arch = x86_64
+INFO    | 	hw.cpu.ncore = 4
+INFO    | 	hw.ramSize = 2048
+INFO    | 	hw.screen = multi-touch
+INFO    | 	hw.mainKeys = false
+INFO    | 	hw.trackBall = false
+INFO    | 	hw.keyboard = false
+INFO    | 	hw.keyboard.lid = true
+INFO    | 	hw.keyboard.charmap = qwerty2
+INFO    | 	hw.dPad = false
+INFO    | 	hw.rotaryInput = false
+INFO    | 	hw.gsmModem = true
+INFO    | 	hw.gps = true
+INFO    | 	hw.battery = true
+INFO    | 	hw.accelerometer = true
+INFO    | 	hw.accelerometer_uncalibrated = true
+INFO    | 	hw.gyroscope = true
+INFO    | 	hw.audioInput = true
+INFO    | 	hw.audioOutput = true
+INFO    | 	hw.sdCard = true
+INFO    | 	disk.cachePartition = true
+INFO    | 	disk.cachePartition.path = /home/jenkins/.android/avd//../avd/device.avd/cache.img
+INFO    | 	disk.cachePartition.size = 66m
+INFO    | 	test.quitAfterBootTimeOut = -1
+INFO    | 	test.delayAdbTillBootComplete = 0
+INFO    | 	test.monitorAdb = 0
+INFO    | 	hw.lcd.width = 1080
+INFO    | 	hw.lcd.height = 1920
+INFO    | 	hw.lcd.depth = 16
+INFO    | 	hw.lcd.circular = false
+INFO    | 	hw.lcd.density = 420
+INFO    | 	hw.lcd.backlight = true
+INFO    | 	hw.lcd.vsync = 60
+INFO    | 	hw.gltransport = pipe
+INFO    | 	hw.gltransport.asg.writeBufferSize = 1048576
+INFO    | 	hw.gltransport.asg.writeStepSize = 4096
+INFO    | 	hw.gltransport.asg.dataRingSize = 32768
+INFO    | 	hw.gltransport.drawFlushInterval = 800
+INFO    | 	hw.displayRegion.0.1.xOffset = -1
+INFO    | 	hw.displayRegion.0.1.yOffset = -1
+INFO    | 	hw.displayRegion.0.1.width = 0
+INFO    | 	hw.displayRegion.0.1.height = 0
+INFO    | 	hw.displayRegion.0.2.xOffset = -1
+INFO    | 	hw.displayRegion.0.2.yOffset = -1
+INFO    | 	hw.displayRegion.0.2.width = 0
+INFO    | 	hw.displayRegion.0.2.height = 0
+INFO    | 	hw.displayRegion.0.3.xOffset = -1
+INFO    | 	hw.displayRegion.0.3.yOffset = -1
+INFO    | 	hw.displayRegion.0.3.width = 0
+INFO    | 	hw.displayRegion.0.3.height = 0
+INFO    | 	hw.display1.width = 0
+INFO    | 	hw.display1.height = 0
+INFO    | 	hw.display1.density = 0
+INFO    | 	hw.display1.xOffset = -1
+INFO    | 	hw.display1.yOffset = -1
+INFO    | 	hw.display1.flag = 0
+INFO    | 	hw.display2.width = 0
+INFO    | 	hw.display2.height = 0
+INFO    | 	hw.display2.density = 0
+INFO    | 	hw.display2.xOffset = -1
+INFO    | 	hw.display2.yOffset = -1
+INFO    | 	hw.display2.flag = 0
+INFO    | 	hw.display3.width = 0
+INFO    | 	hw.display3.height = 0
+INFO    | 	hw.display3.density = 0
+INFO    | 	hw.display3.xOffset = -1
+INFO    | 	hw.display3.yOffset = -1
+INFO    | 	hw.display3.flag = 0
+INFO    | 	hw.multi_display_window = false
+INFO    | 	hw.hotplug_multi_display = false
+INFO    | 	hw.gpu.enabled = true
+INFO    | 	hw.gpu.mode = swiftshader_indirect
+INFO    | 	hw.initialOrientation = portrait
+INFO    | 	hw.camera.back = none
+INFO    | 	hw.camera.front = none
+INFO    | 	vm.heapSize = 512
+INFO    | 	hw.sensors.light = true
+INFO    | 	hw.sensors.pressure = true
+INFO    | 	hw.sensors.humidity = true
+INFO    | 	hw.sensors.proximity = true
+INFO    | 	hw.sensors.magnetic_field = true
+INFO    | 	hw.sensors.magnetic_field_uncalibrated = true
+INFO    | 	hw.sensors.gyroscope_uncalibrated = true
+INFO    | 	hw.sensors.orientation = true
+INFO    | 	hw.sensors.temperature = true
+INFO    | 	hw.sensors.rgbclight = false
+INFO    | 	hw.sensor.hinge = false
+INFO    | 	hw.sensor.hinge.count = 0
+INFO    | 	hw.sensor.hinge.type = 0
+INFO    | 	hw.sensor.hinge.sub_type = 0
+INFO    | 	hw.sensor.hinge.resizable.config = 1
+INFO    | 	hw.sensor.hinge.fold_to_displayRegion.0.1_at_posture = 1
+INFO    | 	hw.sensor.roll = false
+INFO    | 	hw.sensor.roll.count = 0
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.1_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.2_at_posture = 6
+INFO    | 	hw.sensor.roll.resize_to_displayRegion.0.3_at_posture = 6
+INFO    | 	hw.sensors.heart_rate = false
+INFO    | 	hw.sensors.wrist_tilt = false
+INFO    | 	hw.useext4 = true
+INFO    | 	hw.arc = false
+INFO    | 	hw.arc.autologin = false
+INFO    | 	hw.device.name = pixel
+INFO    | 	kernel.path = /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//kernel-ranchu
+INFO    | 	kernel.newDeviceNaming = yes
+INFO    | 	kernel.supportsYaffs2 = no
+INFO    | 	disk.ramdisk.path = /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//ramdisk.img
+INFO    | 	disk.systemPartition.initPath = /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//system.img
+INFO    | 	disk.systemPartition.size = 2786m
+INFO    | 	disk.vendorPartition.initPath = /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//vendor.img
+INFO    | 	disk.vendorPartition.size = 800m
+INFO    | 	disk.dataPartition.path = /home/jenkins/.android/avd//../avd/device.avd/userdata-qemu.img
+INFO    | 	disk.dataPartition.initPath = /home/jenkins/.android/avd//../avd/device.avd/userdata.img
+INFO    | 	disk.dataPartition.size = 6g
+INFO    | 	disk.encryptionKeyPartition.path = /home/jenkins/.android/avd//../avd/device.avd/encryptionkey.img
+INFO    | 	PlayStore.enabled = false
+INFO    | 	avd.name = device
+INFO    | 	avd.id = device
+INFO    | 	fastboot.forceColdBoot = false
+INFO    | 	userdata.useQcow2 = true
+INFO    | 	firstboot.bootFromDownloadableSnapshot = true
+INFO    | 	firstboot.bootFromLocalSnapshot = true
+INFO    | 	firstboot.saveToLocalSnapshot = true
+INFO    | 	android.sdk.root = /home/jenkins/.android_sdk
+INFO    | 	android.avd.home = /home/jenkins/.android/avd/
+INFO    | .
+INFO    | QEMU options list:
+INFO    | 	 argv[00] = "/home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless"
+INFO    | 	 argv[01] = "-dns-server"
+INFO    | 	 argv[02] = "192.168.55.1,192.168.50.37,192.168.55.1,192.168.50.37"
+INFO    | 	 argv[03] = "-no-audio"
+INFO    | 	 argv[04] = "-serial"
+INFO    | 	 argv[05] = "null"
+INFO    | 	 argv[06] = "-device"
+INFO    | 	 argv[07] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=/home/jenkins/.android/avd//../avd/device.avd/data/misc/pstore/pstore.bin"
+INFO    | 	 argv[08] = "-cpu"
+INFO    | 	 argv[09] = "android64-xts"
+INFO    | 	 argv[10] = "-enable-kvm"
+INFO    | 	 argv[11] = "-smp"
+INFO    | 	 argv[12] = "cores=4"
+INFO    | 	 argv[13] = "-m"
+INFO    | 	 argv[14] = "2048"
+INFO    | 	 argv[15] = "-lcd-density"
+INFO    | 	 argv[16] = "420"
+INFO    | 	 argv[17] = "-object"
+INFO    | 	 argv[18] = "iothread,id=disk-iothread"
+INFO    | 	 argv[19] = "-nodefaults"
+INFO    | 	 argv[20] = "-kernel"
+INFO    | 	 argv[21] = "/home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//kernel-ranchu"
+INFO    | 	 argv[22] = "-initrd"
+INFO    | 	 argv[23] = "/home/jenkins/.android/avd//../avd/device.avd/initrd"
+INFO    | 	 argv[24] = "-drive"
+INFO    | 	 argv[25] = "if=none,index=0,id=system,if=none,file=/home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//system.img,read-only"
+INFO    | 	 argv[26] = "-device"
+INFO    | 	 argv[27] = "virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[28] = "-drive"
+INFO    | 	 argv[29] = "if=none,index=1,id=cache,if=none,file=/home/jenkins/.android/avd//../avd/device.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[30] = "-device"
+INFO    | 	 argv[31] = "virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[32] = "-drive"
+INFO    | 	 argv[33] = "if=none,index=2,id=userdata,if=none,file=/home/jenkins/.android/avd//../avd/device.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[34] = "-device"
+INFO    | 	 argv[35] = "virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[36] = "-drive"
+INFO    | 	 argv[37] = "if=none,index=3,id=encrypt,if=none,file=/home/jenkins/.android/avd//../avd/device.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+INFO    | 	 argv[38] = "-device"
+INFO    | 	 argv[39] = "virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[40] = "-drive"
+INFO    | 	 argv[41] = "if=none,index=4,id=vendor,if=none,file=/home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//vendor.img,read-only"
+INFO    | 	 argv[42] = "-device"
+INFO    | 	 argv[43] = "virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify"
+INFO    | 	 argv[44] = "-netdev"
+INFO    | 	 argv[45] = "user,id=mynet"
+INFO    | 	 argv[46] = "-device"
+INFO    | 	 argv[47] = "virtio-net-pci,netdev=mynet"
+INFO    | 	 argv[48] = "-chardev"
+INFO    | 	 argv[49] = "null,id=forhvc0"
+INFO    | 	 argv[50] = "-chardev"
+INFO    | 	 argv[51] = "null,id=forhvc1"
+INFO    | 	 argv[52] = "-device"
+INFO    | 	 argv[53] = "virtio-serial-pci,ioeventfd=off"
+INFO    | 	 argv[54] = "-device"
+INFO    | 	 argv[55] = "virtconsole,chardev=forhvc0"
+INFO    | 	 argv[56] = "-device"
+INFO    | 	 argv[57] = "virtconsole,chardev=forhvc1"
+INFO    | 	 argv[58] = "-chardev"
+INFO    | 	 argv[59] = "netsim,id=bluetooth"
+INFO    | 	 argv[60] = "-device"
+INFO    | 	 argv[61] = "virtserialport,chardev=bluetooth,name=bluetooth"
+INFO    | 	 argv[62] = "-device"
+INFO    | 	 argv[63] = "virtio-serial,ioeventfd=off"
+INFO    | 	 argv[64] = "-chardev"
+INFO    | 	 argv[65] = "socket,port=32937,host=::1,nowait,nodelay,reconnect=10,ipv6,id=modem"
+INFO    | 	 argv[66] = "-device"
+INFO    | 	 argv[67] = "virtserialport,chardev=modem,name=modem"
+INFO    | 	 argv[68] = "-device"
+INFO    | 	 argv[69] = "virtio-rng-pci"
+INFO    | 	 argv[70] = "-show-cursor"
+INFO    | 	 argv[71] = "-device"
+INFO    | 	 argv[72] = "virtio_input_multi_touch_pci_1"
+INFO    | 	 argv[73] = "-device"
+INFO    | 	 argv[74] = "virtio_input_multi_touch_pci_2"
+INFO    | 	 argv[75] = "-device"
+INFO    | 	 argv[76] = "virtio_input_multi_touch_pci_3"
+INFO    | 	 argv[77] = "-device"
+INFO    | 	 argv[78] = "virtio_input_multi_touch_pci_4"
+INFO    | 	 argv[79] = "-device"
+INFO    | 	 argv[80] = "virtio_input_multi_touch_pci_5"
+INFO    | 	 argv[81] = "-device"
+INFO    | 	 argv[82] = "virtio_input_multi_touch_pci_6"
+INFO    | 	 argv[83] = "-device"
+INFO    | 	 argv[84] = "virtio_input_multi_touch_pci_7"
+INFO    | 	 argv[85] = "-device"
+INFO    | 	 argv[86] = "virtio_input_multi_touch_pci_8"
+INFO    | 	 argv[87] = "-device"
+INFO    | 	 argv[88] = "virtio_input_multi_touch_pci_9"
+INFO    | 	 argv[89] = "-device"
+INFO    | 	 argv[90] = "virtio_input_multi_touch_pci_10"
+INFO    | 	 argv[91] = "-device"
+INFO    | 	 argv[92] = "virtio_input_multi_touch_pci_11"
+INFO    | 	 argv[93] = "-netdev"
+INFO    | 	 argv[94] = "user,id=virtio-wifi,dhcpstart=10.0.2.16"
+INFO    | 	 argv[95] = "-device"
+INFO    | 	 argv[96] = "virtio-wifi-pci,netdev=virtio-wifi"
+INFO    | 	 argv[97] = "-device"
+INFO    | 	 argv[98] = "virtio-vsock-pci,guest-cid=77"
+INFO    | 	 argv[99] = "-L"
+INFO    | 	 argv[100] = "/home/jenkins/.android_sdk/emulator/lib/pc-bios"
+INFO    | 	 argv[101] = "-soundhw"
+INFO    | 	 argv[102] = "virtio-snd-pci"
+INFO    | 	 argv[103] = "-vga"
+INFO    | 	 argv[104] = "none"
+INFO    | 	 argv[105] = "-append"
+INFO    | 	 argv[106] = "no_timer_check 8250.nr_uarts=1 clocksource=pit console=0 cma=288M@0-4G ndns=4 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on bootconfig"
+INFO    | 	 argv[107] = "-android-hw"
+INFO    | 	 argv[108] = "/home/jenkins/.android/avd//../avd/device.avd/hardware-qemu.ini"
+INFO    | Concatenated QEMU options: /home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless -dns-server 192.168.55.1,192.168.50.37,192.168.55.1,192.168.50.37 -no-audio -serial null -device goldfish_pstore,addr=0xff018000,size=0x10000,file=/home/jenkins/.android/avd//../avd/device.avd/data/misc/pstore/pstore.bin -cpu android64-xts -enable-kvm -smp cores=4 -m 2048 -lcd-density 420 -object iothread,id=disk-iothread -nodefaults -kernel /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//kernel-ranchu -initrd /home/jenkins/.android/avd//../avd/device.avd/initrd -drive if=none,index=0,id=system,if=none,file=/home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//system.img,read-only -device virtio-blk-pci,drive=system,iothread=disk-iothread,modern-pio-notify -drive if=none,index=1,id=cache,if=none,file=/home/jenkins/.android/avd//../avd/device.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=cache,iothread=disk-iothread,modern-pio-notify -drive if=none,index=2,id=userdata,if=none,file=/home/jenkins/.android/avd//../avd/device.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=userdata,iothread=disk-iothread,modern-pio-notify -drive if=none,index=3,id=encrypt,if=none,file=/home/jenkins/.android/avd//../avd/device.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=encrypt,iothread=disk-iothread,modern-pio-notify -drive if=none,index=4,id=vendor,if=none,file=/home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//vendor.img,read-only -device virtio-blk-pci,drive=vendor,iothread=disk-iothread,modern-pio-notify -netdev user,id=mynet -device virtio-net-pci,netdev=mynet -chardev null,id=forhvc0 -chardev null,id=forhvc1 -device virtio-serial-pci,ioeventfd=off -device virtconsole,chardev=forhvc0 -device virtconsole,chardev=forhvc1 -chardev netsim,id=bluetooth -device virtserialport,chardev=bluetooth,name=bluetooth -device virtio-serial,ioeventfd=off -chardev socket,port=32937,host=::1,nowait,nodelay,reconnect=10,ipv6,id=modem -device virtserialport,chardev=modem,name=modem -device virtio-rng-pci -show-cursor -device virtio_input_multi_touch_pci_1 -device virtio_input_multi_touch_pci_2 -device virtio_input_multi_touch_pci_3 -device virtio_input_multi_touch_pci_4 -device virtio_input_multi_touch_pci_5 -device virtio_input_multi_touch_pci_6 -device virtio_input_multi_touch_pci_7 -device virtio_input_multi_touch_pci_8 -device virtio_input_multi_touch_pci_9 -device virtio_input_multi_touch_pci_10 -device virtio_input_multi_touch_pci_11 -netdev user,id=virtio-wifi,dhcpstart=10.0.2.16 -device virtio-wifi-pci,netdev=virtio-wifi -device virtio-vsock-pci,guest-cid=77 -L /home/jenkins/.android_sdk/emulator/lib/pc-bios -soundhw virtio-snd-pci -vga none -append 'no_timer_check 8250.nr_uarts=1 clocksource=pit console=0 cma=288M@0-4G ndns=4 loop.max_part=7 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 printk.devkmsg=on bootconfig' -android-hw /home/jenkins/.android/avd//../avd/device.avd/hardware-qemu.ini
+DEBUG   | Android qemu version 34.1.20.0 (build_id 11610631) (CL:N/A)
+DEBUG   | Starting QEMU main loop
+DEBUG   | registered 'boot-properties' qemud service
+DEBUG   | Adding boot property: 'ro.opengles.version' = '196608'
+DEBUG   | Adding boot property: 'qemu.sf.fake_camera' = 'none'
+DEBUG   | Adding boot property: 'qemu.adb.secure' = '1'
+DEBUG   | Adding boot property: 'dalvik.vm.heapsize' = '512m'
+DEBUG   | Adding boot property: 'qemu.hw.mainkeys' = '0'
+DEBUG   | Adding boot property: 'qemu.sf.lcd_density' = '420'
+DEBUG   | control console listening on port 5554, ADB on port 5555
+DEBUG   | goldfish_events.have-dpad: false
+DEBUG   | goldfish_events.have-trackball: false
+DEBUG   | goldfish_events.have-camera: false
+DEBUG   | goldfish_events.have-keyboard: false
+DEBUG   | goldfish_events.have-lidswitch: true
+DEBUG   | goldfish_events.have-tabletmode: false
+DEBUG   | goldfish_events.have-touch: false
+DEBUG   | goldfish_events.have-multitouch: false
+DEBUG   | Adding boot property: 'net.wifi_mac_prefix' = '5554'
+WARNING: cannnot unmap ptr 0x712054271000 as it is in the protected range from 0x712054271000 to 0x7120d4471000
+WARNING: cannnot unmap ptr 0x7120d4401000 as it is in the protected range from 0x712054271000 to 0x7120d4471000
+DEBUG   | Adding boot property: 'qemu.timezone' = 'Etc/UTC'
+DEBUG   | android_hw_fingerprint_init: fingerprint qemud listen service initialized
+WARNING | Using fallback path for the emulator registration directory.
+WARNING | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+DEBUG   | (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+DEBUG   | (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+DEBUG   | (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+DEBUG   | (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+DEBUG   | (webrtc_voice_engine.cc:311): WebRtcVoiceEngine::WebRtcVoiceEngine
+DEBUG   | (webrtc_voice_engine.cc:333): WebRtcVoiceEngine::Init
+DEBUG   | (webrtc_voice_engine.cc:424): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, }
+DEBUG   | (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+DEBUG   | (matched_filter.cc:139): AEC3: Pre echo configuration:  threshold = 0.5, mode =  0.
+DEBUG   | (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+DEBUG   | (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+DEBUG   | (clipping_predictor.cc:358): [AGC2] Clipping prediction disabled.
+DEBUG   | (agc_manager_direct.cc:481): [agc] analog controller enabled: yes
+DEBUG   | (agc_manager_direct.cc:484): [agc] Min mic level: 12 (overridden: no)
+DEBUG   | (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.AppliedInputVolume.*` histogram stats.
+DEBUG   | (input_volume_stats_reporter.cc:98): Will not log any `WebRTC.Audio.Apm.RecommendedInputVolume.*` histogram stats.
+DEBUG   | (audio_processing_impl.cc:695): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+DEBUG   | (audio_processing_impl.cc:708): AudioProcessing: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 0 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+DEBUG   | (webrtc_voice_engine.cc:311): WebRtcVoiceEngine::WebRtcVoiceEngine
+DEBUG   | (webrtc_voice_engine.cc:333): WebRtcVoiceEngine::Init
+DEBUG   | (webrtc_voice_engine.cc:424): WebRtcVoiceEngine::ApplyOptions: AudioOptions {aec: 1, agc: 1, ns: 1, hf: 1, swap: 0, audio_jitter_buffer_max_packets: 200, audio_jitter_buffer_fast_accelerate: 0, audio_jitter_buffer_min_delay_ms: 0, }
+DEBUG   | (audio_processing_impl.cc:911): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 },capture_level_adjustment: { enabled: 0, pre_gain_factor: 1, post_gain_factor: 1, analog_mic_gain_emulation: { enabled: 0, initial_level: 255 }}, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_gain_controller { enabled: 1, startup_min_volume: 0, clipped_level_min: 70, enable_digital_adaptive: 1, clipped_level_step: 15, clipped_ratio_threshold: 0.1, clipped_wait_frames: 300, clipping_predictor:  { enabled: 0, mode: 0, window_length: 5, reference_window_length: 5, reference_window_delay: 5, clipping_threshold: -1, crest_factor_margin: 3, use_predicted_step: 1 }}}, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, headroom_db: 6, max_gain_db: 30, initial_gain_db: 8, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }, input_volume_control : { enabled 0}}
+DEBUG   | (matched_filter.cc:139): AEC3: Pre echo configuration:  threshold = 0.5, mode =  0.
+DEBUG   | (transparent_mode.cc:239): AEC3 Transparent Mode: Legacy
+DEBUG   | (echo_canceller3.cc:793): AEC3 created with sample rate: 16000 Hz, num render channels: 1, num capture channels: 1
+DEBUG   | (clipping_predictor.cc:358): [AGC2] Clipping prediction disabled.
+DEBUG   | (agc_manager_direct.cc:481): [agc] analog controller enabled: yes
+DEBUG   | (agc_manager_direct.cc:484): [agc] Min mic level: 12 (overridden: no)
+INFO    | Using security allow list from: /home/jenkins/.android_sdk/emulator/lib/emulator_access.json
+WARNING | *** Basic token auth should only be used by android-studio ***
+INFO    | The active JSON Web Key Sets can be found here: /root/.android/avd/running/19/jwks/dc1111d5-73f5-49de-b693-40f2a8b6f6ed/active.jwk
+INFO    | Scanning /root/.android/avd/running/19/jwks/dc1111d5-73f5-49de-b693-40f2a8b6f6ed for jwk keys.
+INFO    | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+WARNING | Using fallback path for the emulator registration directory.
+INFO    | Advertising in: /root/.android/avd/running/pid_19.ini
+DEBUG   | Successfully initialized Wi-Fi
+DEBUG   | emulator_window_fb_rotate
+I0423 14:07:00.025020      95 FrameBuffer.cpp:3707] setDisplayConfigs w 1080 h 1920 dpiX 420 dpiY 420
+DEBUG   | setDisplayPose 0 x 0 y 0 w 1080 h 1920 dpi 0
+I0423 14:07:00.025042      95 FrameBuffer.cpp:3720] setDisplayActiveConfig 0
+DEBUG   | Adjusting window size by 0.38x for hw_lcd_density
+DEBUG   | config multidisplay with config.ini 0x0 0x0 0x0
+DEBUG   | No acpi ini file provided, using default
+DEBUG   | added one RIL client
+INFO    | Cold boot: requested by the user
+WARNING | Cold boot:  requested by the user
+WARNING | Failed to process .ini file /root/.android/emu-update-last-check.ini for reading.
+DEBUG   | No acpi ini file provided, using default
+WARNING | Failed to process .ini file /root/.android/emu-update-last-check.ini for reading.
+INFO    | Activated packet streamer for bluetooth emulation
+DEBUG   | setDisplayPose 0 x -1 y -1 w 1080 h 1920 dpi 420
+DEBUG   | _hwFingerprint_connect: connect finger print listen is called
+DEBUG   | got message from guest system fingerprint HAL
+INFO    | Boot completed in 20460 ms
+INFO    | Increasing screen off timeout, logcat buffer size to 2M.
+ERROR   | Unable to connect to adb daemon on port: 5037

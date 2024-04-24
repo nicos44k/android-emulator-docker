@@ -1,0 +1,58 @@
+jenkins@04d2c2a71b47:~$ emulator @device -no-window -no-snapshot -noaudio -no-boot-anim -memory 2048 -accel on -camera-back none -gpu off -verbose
+
+INFO    | Storing crashdata in: /tmp/android-unknown/emu-crash-34.1.20.db, detection is enabled for process: 9
+INFO    | Android emulator version 34.1.20.0 (build_id 11610631) (CL:N/A)
+DEBUG   | Current emulator version 34.1.20 is the same as the required version 34.1.20.
+INFO    | Found AVD name 'device'
+INFO    | Found AVD target architecture: x86_64
+INFO    | argv[0]: 'emulator'; program directory: '/home/jenkins/.android_sdk/emulator'
+INFO    | Found systemPath /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64/
+INFO    | emuDirName: '/home/jenkins/.android_sdk/emulator'
+INFO    | try dir /home/jenkins/.android_sdk/emulator
+INFO    | Trying emulator path '/home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless'
+INFO    | Found target-specific 64-bit emulator binary: /home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless
+INFO    | Adding library search path: '/home/jenkins/.android_sdk/emulator/lib64'
+INFO    | Adding library search path: '/home/jenkins/.android_sdk/emulator/lib64/gles_swiftshader'
+INFO    | Adding library search path: '/home/jenkins/.android_sdk/emulator/lib64/libstdc++'
+DEBUG   | emulator: Running :/home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless
+DEBUG   | qemu backend: argv[00] = "/home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless"
+DEBUG   | qemu backend: argv[01] = "@device"
+DEBUG   | qemu backend: argv[02] = "-no-window"
+DEBUG   | qemu backend: argv[03] = "-no-snapshot"
+DEBUG   | qemu backend: argv[04] = "-noaudio"
+DEBUG   | qemu backend: argv[05] = "-no-boot-anim"
+DEBUG   | qemu backend: argv[06] = "-memory"
+DEBUG   | qemu backend: argv[07] = "2048"
+DEBUG   | qemu backend: argv[08] = "-accel"
+DEBUG   | qemu backend: argv[09] = "on"
+DEBUG   | qemu backend: argv[10] = "-camera-back"
+DEBUG   | qemu backend: argv[11] = "none"
+DEBUG   | qemu backend: argv[12] = "-gpu"
+DEBUG   | qemu backend: argv[13] = "off"
+DEBUG   | qemu backend: argv[14] = "-verbose"
+DEBUG   | Concatenated backend parameters:  /home/jenkins/.android_sdk/emulator/qemu/linux-x86_64/qemu-system-x86_64-headless @device -no-window -no-snapshot -noaudio -no-boot-anim -memory 2048 -accel on -camera-back none -gpu off -verbose
+INFO    | Storing crashdata in: /tmp/android-unknown/emu-crash-34.1.20.db, detection is enabled for process: 9
+INFO    | Duplicate loglines will be removed, if you wish to see each individual line launch with the -log-nofilter flag.
+DEBUG   | autoconfig: -skin 1080x1920
+DEBUG   | autoconfig: -skindir (null)
+DEBUG   | autoconfig: -kernel /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//kernel-ranchu
+DEBUG   | Target arch = 'x86_64'
+DEBUG   | Auto-detect: Kernel image requires new device naming scheme.
+DEBUG   | Auto-detect: Kernel does not support YAFFS2 partitions.
+DEBUG   | autoconfig: -ramdisk /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//ramdisk.img
+DEBUG   | Using initial system image: /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//system.img
+DEBUG   | Using initial vendor image: /home/jenkins/.android_sdk/system-images/android-33/google_apis_playstore/x86_64//vendor.img
+DEBUG   | autoconfig: -initdata /home/jenkins/.android/avd/../avd/device.avd/userdata.img
+DEBUG   | autoconfig: -cache /home/jenkins/.android/avd/../avd/device.avd/cache.img
+DEBUG   | Physical RAM size: 2048MB
+DEBUG   | VM heap size 0MB is below hardware specified minimum of 512MB,setting it to that value
+DEBUG   | System image is read only
+DEBUG   | Found 4 DNS servers:
+DEBUG   | 	192.168.55.1
+DEBUG   | 	192.168.50.37
+DEBUG   | 	192.168.55.1
+DEBUG   | 	192.168.50.37
+DEBUG   | Starting hostapd main loop.
+DEBUG   | found magic skin width=1080 height=1920 bpp=16
+Segmentation fault (core dumped)
+

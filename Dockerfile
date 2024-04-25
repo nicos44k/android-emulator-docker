@@ -61,9 +61,4 @@ RUN avdmanager create avd --name "${EMULATOR_NAME}" --device pixel --package "sy
 
 COPY --chown=1003:1003 emulator_run.sh $WORKDIR/emulator_run.sh
 
-USER root
-RUN apt-get update && \ 
-    apt-get install --yes \
-			libtcmalloc-minimal4
-USER jenkins
 CMD [ "/bin/bash" ]
